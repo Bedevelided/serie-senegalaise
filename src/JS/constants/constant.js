@@ -1,0 +1,1 @@
+export const FILTRER_PAR_NOM = "FILTRER_PAR_NOM";

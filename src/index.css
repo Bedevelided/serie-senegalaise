@@ -1,0 +1,41 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  color : #fff !important;
+}
+a:hover{
+  color : #48dcf7 !important;
+}
+a.active{
+  color : #48dcf7 !important;
+}
+.container-lg {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+@media (max-width : 950px) {
+  .container-lg{
+    grid-template-columns: repeat(3 , 1fr);
+  }
+}
+
+@media (max-width : 560px) {
+  .container-lg{
+    grid-template-columns: repeat(2 , 1fr);
+  }
+}
+@media (max-width : 385px) {
+  .container-lg{
+    grid-template-columns: repeat(1 , 1fr);
+  }
+}
+
